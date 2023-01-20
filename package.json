@@ -1,5 +1,5 @@
 {
-  "name": "turbo-next-reproduction",
+  "name": "workspace",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -7,19 +7,20 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
+    "build": "turbo run build --continue",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
-    "prettier": "latest",
-    "turbo": "latest"
+    "prettier": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "turbo": "1.7.0"
+  },
   "packageManager": "pnpm@7.25.0"
 }

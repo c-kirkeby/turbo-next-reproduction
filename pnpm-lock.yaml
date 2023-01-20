@@ -6,11 +6,12 @@ importers:
     specifiers:
       eslint-config-custom: workspace:*
       prettier: latest
-      turbo: latest
+      turbo: 1.7.0
+    dependencies:
+      turbo: 1.7.0
     devDependencies:
       eslint-config-custom: link:packages/eslint-config-custom
       prettier: 2.8.3
-      turbo: 1.7.0
 
   apps/docs:
     specifiers:
@@ -2326,7 +2327,7 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /turbo-darwin-arm64/1.7.0:
@@ -2334,7 +2335,7 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /turbo-linux-64/1.7.0:
@@ -2342,7 +2343,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /turbo-linux-arm64/1.7.0:
@@ -2350,7 +2351,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /turbo-windows-64/1.7.0:
@@ -2358,7 +2359,7 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /turbo-windows-arm64/1.7.0:
@@ -2366,7 +2367,7 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /turbo/1.7.0:
@@ -2380,7 +2381,7 @@ packages:
       turbo-linux-arm64: 1.7.0
       turbo-windows-64: 1.7.0
       turbo-windows-arm64: 1.7.0
-    dev: true
+    dev: false
 
   /type-check/0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
